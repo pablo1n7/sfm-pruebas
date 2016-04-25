@@ -8,7 +8,6 @@ from mpl_toolkits.mplot3d import Axes3D
 
 class Rescontruccion3D(object):
     """docstring for rescontruccion3D"""
-
     vistas = []
     camaras = []
     pts3D= []
@@ -103,6 +102,7 @@ class Rescontruccion3D(object):
 
     def homogeneizar_puntos(self,puntos_clave_uno,puntos_clave_dos):
         #cambiar esto esta mejor en el notebook
+        
         puntos_homogenios_uno = []
         puntos_homogenios_dos = []
         for i in range(len(self.FMask)):
@@ -114,6 +114,12 @@ class Rescontruccion3D(object):
         puntos_homogenios_uno = np.array(puntos_homogenios_uno)
         puntos_homogenios_dos = np.array(puntos_homogenios_dos)
         return puntos_homogenios_uno,puntos_homogenios_dos
+        """
+        unos = np.ones((puntos_clave_uno.shape[0],1))
+        puntos_homogenios_uno = np.hstack((puntos_clave_uno,unos)) # normalizado a x,y,1
+        puntos_homogenios_dos = np.hstack((puntos_clave_dos,unos)) # normalizado a x,y,1
+        return puntos_homogenios_uno,puntos_homogenios_dos
+        """
 
 
     def triangular(self,puntos_homogenios_uno,puntos_homogenios_dos):
