@@ -19,5 +19,6 @@ class Vista(object):
 		self.features = dict()
 
 	def buscar_feature(self,vista2):
-		self.features[vista2] = Feature(self,vista2)
-		#vista2.features[self] = Feature(vista2,self)
+		feacture = Feature(self,vista2)
+		self.features[vista2] = feacture
+		vista2.features[self] = feacture

@@ -33,22 +33,24 @@ class Rescontruccion3D(object):
                 if(extension == ".png" or extension == ".JPG"):
                     self.vistas.append(Vista(self.ruta+nombreFichero+extension))
 
-        #if self.vistas.len<2:
-         #   print "Error - no se pudieron localizar las vistas"
-        #else:
+        self.camaras.append(np.hstack((np.eye(3), np.zeros((3, 1)))))
 
-    def inicializar_construccion(self):
+    def inicializacion(self):
+        self.pts3D = self.construir_vista3D(0,1)
+
+    def construir_vista3D(self,indice_vista_uno,indice_vista_dos):
         """la inicializacion se realiza con las dos primera imagenes, apartir de ahi se 
         deberia ir incrementando la nube 3D a partir de las demas vistas"""
-        self.vistas[0].buscar_feature(self.vistas[1]) #la primera inicializacion
-        self.obtener_matriz_fundamental(self.vistas[0].features[self.vistas[1]].match_puntos_uno,self.vistas[0].features[self.vistas[1]].match_puntos_dos)
+        self.vistas[indice_vista_uno].buscar_feature(self.vistas[indice_vista_dos]) #la primera inicializacion
+        self.obtener_matriz_fundamental(self.vistas[indice_vista_uno].features[self.vistas[indice_vista_dos]].match_puntos_uno,self.vistas[indice_vista_uno].features[self.vistas[indice_vista_dos]].match_puntos_dos)
         self.obtener_matriz_esencial()
-        #puntos_homogenios_uno,puntos_homogenios_dos = self.homogeneizar_puntos(self.vistas[0].features[self.vistas[1]].match_puntos_uno,self.vistas[0].features[self.vistas[1]].match_puntos_dos)
-        puntos_homogenios_uno,puntos_homogenios_dos = self.vistas[0].features[self.vistas[1]].homogeneizar_puntos(self.K,self.FMask)
-        self.obtener_camaras(puntos_homogenios_uno,puntos_homogenios_dos)
-        X1 = self.triangular(puntos_homogenios_uno,puntos_homogenios_dos,1)
-        X2 = self.triangular_linealmente(puntos_homogenios_uno,puntos_homogenios_dos,1)
-        self.pts3D = np.concatenate((X1,X2)) 
+        puntos_homogenios_uno,puntos_homogenios_dos = self.vistas[indice_vista_uno].features[self.vistas[indice_vista_dos]].homogeneizar_puntos(self.K,self.FMask)
+        camara = self.obtener_camaras(puntos_homogenios_uno,puntos_homogenios_dos)
+        self.camaras.append(camara)
+        X1 = self.triangular(puntos_homogenios_uno,puntos_homogenios_dos,camara)
+        X2 = self.triangular_linealmente(puntos_homogenios_uno,puntos_homogenios_dos,camara)
+        X3D = np.concatenate((X1,X2)) 
+        return X3D
 
     def obtener_matriz_fundamental(self,puntos_clave_uno,puntos_clave_dos):
         self.F,self.FMask = cv2.findFundamentalMat(puntos_clave_uno,puntos_clave_dos,cv2.FM_RANSAC, 0.1, 0.99)
@@ -83,8 +85,8 @@ class Rescontruccion3D(object):
             if not self.enfrente_ambas_camaras(puntos_homogenios_uno,puntos_homogenios_dos, self.R, self.t):
                 # Fourth choice: R = U * Wt * Vt, T = -u_3
                 self.t = - U[:, 2]
-        self.camaras.append(np.hstack((np.eye(3), np.zeros((3, 1)))))
-        self.camaras.append(np.hstack((self.R, self.t.reshape(3, 1))))
+        #self.camaras.append(np.hstack((self.R, self.t.reshape(3, 1))))
+        return np.hstack((self.R, self.t.reshape(3, 1)))
 
 
     def triangulacion_lineal(self,u1, P1, u2, P2):
@@ -104,19 +106,19 @@ class Rescontruccion3D(object):
         ret, X = cv2.solve(A, B, flags=cv2.DECOMP_SVD)
         return X.reshape(1, 3)
 
-    def triangular(self,puntos_homogenios_uno,puntos_homogenios_dos,indice_camara):
+    def triangular(self,puntos_homogenios_uno,puntos_homogenios_dos,camara):
         puntos_homogenios_uno = puntos_homogenios_uno.reshape(-1, 3)[:, :2]
         puntos_homogenios_dos = puntos_homogenios_dos.reshape(-1,3)[:,:2]
-        triangulacion = cv2.triangulatePoints(self.camaras[0],self.camaras[indice_camara],puntos_homogenios_uno.T,puntos_homogenios_dos.T).T
+        triangulacion = cv2.triangulatePoints(self.camaras[0],camara,puntos_homogenios_uno.T,puntos_homogenios_dos.T).T
         X = triangulacion[:, :3]/np.repeat(triangulacion[:, 3], 3).reshape(-1, 3)
         return X
 
-    def triangular_linealmente(self,puntos_homogenios_uno,puntos_homogenios_dos,indice_camara):
+    def triangular_linealmente(self,puntos_homogenios_uno,puntos_homogenios_dos,camara):
         X  = []
         for i in range(puntos_homogenios_uno.shape[0]):
             uf =  np.linalg.inv(self.K) * puntos_homogenios_uno[i]
             us = np.linalg.inv(self.K) * puntos_homogenios_dos[i]
-            x = self.triangulacion_lineal(uf[0],self.camaras[0],us[0],self.camaras[indice_camara])
+            x = self.triangulacion_lineal(uf[0],self.camaras[0],us[0],camara)
             X.append(x[0])
         return X
 
