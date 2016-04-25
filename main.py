@@ -19,6 +19,7 @@ def main():
     d = np.array([0.0, 0.0, 0.0, 0.0, 0.0]).reshape(1, 5)
     ruta = "img/monumento/"
     a = r3D.Rescontruccion3D(ruta,K,d)
+    
 
 
 if __name__ == '__main__':

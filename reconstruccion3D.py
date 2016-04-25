@@ -36,14 +36,19 @@ class Rescontruccion3D(object):
         #if self.vistas.len<2:
          #   print "Error - no se pudieron localizar las vistas"
         #else:
+
+    def inicializar_construccion(self):
         """la inicializacion se realiza con las dos primera imagenes, apartir de ahi se 
         deberia ir incrementando la nube 3D a partir de las demas vistas"""
         self.vistas[0].buscar_feature(self.vistas[1]) #la primera inicializacion
         self.obtener_matriz_fundamental(self.vistas[0].features[self.vistas[1]].match_puntos_uno,self.vistas[0].features[self.vistas[1]].match_puntos_dos)
         self.obtener_matriz_esencial()
-        puntos_homogenios_uno,puntos_homogenios_dos = self.homogeneizar_puntos(self.vistas[0].features[self.vistas[1]].match_puntos_uno,self.vistas[0].features[self.vistas[1]].match_puntos_dos)
+        #puntos_homogenios_uno,puntos_homogenios_dos = self.homogeneizar_puntos(self.vistas[0].features[self.vistas[1]].match_puntos_uno,self.vistas[0].features[self.vistas[1]].match_puntos_dos)
+        puntos_homogenios_uno,puntos_homogenios_dos = self.vistas[0].features[self.vistas[1]].homogeneizar_puntos(self.K,self.FMask)
         self.obtener_camaras(puntos_homogenios_uno,puntos_homogenios_dos)
-        self.triangular(puntos_homogenios_uno,puntos_homogenios_dos)
+        X1 = self.triangular(puntos_homogenios_uno,puntos_homogenios_dos,1)
+        X2 = self.triangular_linealmente(puntos_homogenios_uno,puntos_homogenios_dos,1)
+        self.pts3D = np.concatenate((X1,X2)) 
 
     def obtener_matriz_fundamental(self,puntos_clave_uno,puntos_clave_dos):
         self.F,self.FMask = cv2.findFundamentalMat(puntos_clave_uno,puntos_clave_dos,cv2.FM_RANSAC, 0.1, 0.99)
@@ -82,7 +87,7 @@ class Rescontruccion3D(object):
         self.camaras.append(np.hstack((self.R, self.t.reshape(3, 1))))
 
 
-    def triangulacion_lineal(u1, P1, u2, P2):
+    def triangulacion_lineal(self,u1, P1, u2, P2):
         A = np.array([u1[0]*P1[2, 0] - P1[0, 0], u1[0]*P1[2, 1] - P1[0, 1],
                       u1[0]*P1[2, 2] - P1[0, 2], u1[1]*P1[2, 0] - P1[1, 0],
                       u1[1]*P1[2, 1] - P1[1, 1], u1[1]*P1[2, 2] - P1[1, 2],
@@ -99,35 +104,21 @@ class Rescontruccion3D(object):
         ret, X = cv2.solve(A, B, flags=cv2.DECOMP_SVD)
         return X.reshape(1, 3)
 
-
-    def homogeneizar_puntos(self,puntos_clave_uno,puntos_clave_dos):
-        #cambiar esto esta mejor en el notebook
-        
-        puntos_homogenios_uno = []
-        puntos_homogenios_dos = []
-        for i in range(len(self.FMask)):
-            if self.FMask[i]:
-                # normalize and homogenize the image coordinates
-                puntos_homogenios_uno.append(np.linalg.inv(self.K).dot([puntos_clave_uno[i][0],puntos_clave_uno[i][1], 1.0]))
-                puntos_homogenios_dos.append( np.linalg.inv(self.K).dot([puntos_clave_dos[i][0],puntos_clave_dos[i][1], 1.0]))
-
-        puntos_homogenios_uno = np.array(puntos_homogenios_uno)
-        puntos_homogenios_dos = np.array(puntos_homogenios_dos)
-        return puntos_homogenios_uno,puntos_homogenios_dos
-        """
-        unos = np.ones((puntos_clave_uno.shape[0],1))
-        puntos_homogenios_uno = np.hstack((puntos_clave_uno,unos)) # normalizado a x,y,1
-        puntos_homogenios_dos = np.hstack((puntos_clave_dos,unos)) # normalizado a x,y,1
-        return puntos_homogenios_uno,puntos_homogenios_dos
-        """
-
-
-    def triangular(self,puntos_homogenios_uno,puntos_homogenios_dos):
+    def triangular(self,puntos_homogenios_uno,puntos_homogenios_dos,indice_camara):
         puntos_homogenios_uno = puntos_homogenios_uno.reshape(-1, 3)[:, :2]
         puntos_homogenios_dos = puntos_homogenios_dos.reshape(-1,3)[:,:2]
-        triangulacion = cv2.triangulatePoints(self.camaras[0],self.camaras[1],puntos_homogenios_uno.T,puntos_homogenios_dos.T).T
-        self.pts3D = triangulacion[:, :3]/np.repeat(triangulacion[:, 3], 3).reshape(-1, 3)
-        return self.pts3D
+        triangulacion = cv2.triangulatePoints(self.camaras[0],self.camaras[indice_camara],puntos_homogenios_uno.T,puntos_homogenios_dos.T).T
+        X = triangulacion[:, :3]/np.repeat(triangulacion[:, 3], 3).reshape(-1, 3)
+        return X
+
+    def triangular_linealmente(self,puntos_homogenios_uno,puntos_homogenios_dos,indice_camara):
+        X  = []
+        for i in range(puntos_homogenios_uno.shape[0]):
+            uf =  np.linalg.inv(self.K) * puntos_homogenios_uno[i]
+            us = np.linalg.inv(self.K) * puntos_homogenios_dos[i]
+            x = self.triangulacion_lineal(uf[0],self.camaras[0],us[0],self.camaras[indice_camara])
+            X.append(x[0])
+        return X
 
     def graficar_nube(self):
         # plot with matplotlib

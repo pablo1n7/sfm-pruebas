@@ -29,5 +29,19 @@ class Feature(object):
 		self.match_puntos_dos = np.zeros_like(self.match_puntos_uno)
 
 		for i in range(len(matches)):
-		    self.match_puntos_uno[i] = self.puntos_uno[matches[i].queryIdx].pt
-		    self.match_puntos_dos[i] = self.puntos_dos[matches[i].trainIdx].pt
+			self.match_puntos_uno[i] = self.puntos_uno[matches[i].queryIdx].pt
+			self.match_puntos_dos[i] = self.puntos_dos[matches[i].trainIdx].pt
+
+	def homogeneizar_puntos(self,K,FMask):
+		#cambiar esto esta mejor en el notebook
+		puntos_homogenios_uno = []
+		puntos_homogenios_dos = []
+		for i in range(len(FMask)):
+			if FMask[i]:
+				# normalize and homogenize the image coordinates
+				puntos_homogenios_uno.append(np.linalg.inv(K).dot([self.match_puntos_uno[i][0],self.match_puntos_uno[i][1], 1.0]))
+				puntos_homogenios_dos.append( np.linalg.inv(K).dot([self.match_puntos_dos[i][0],self.match_puntos_dos[i][1], 1.0]))
+
+		puntos_homogenios_uno = np.array(puntos_homogenios_uno)
+		puntos_homogenios_dos = np.array(puntos_homogenios_dos)
+		return puntos_homogenios_uno,puntos_homogenios_dos

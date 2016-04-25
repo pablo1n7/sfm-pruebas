@@ -5,7 +5,7 @@ class Vista(object):
 	
 	"""Representa una imagen,con su correspondientes caracteristicas aplicadas a otra vista"""
 	ruta = ""
-	features = {}
+	features = None
 	img = []
 
 	def __init__(self, ruta, size=600):
@@ -16,5 +16,8 @@ class Vista(object):
 			while self.img.shape[1] > 2*size:
 				self.img = cv2.pyrDown(self.img)
 
+		self.features = dict()
+
 	def buscar_feature(self,vista2):
 		self.features[vista2] = Feature(self,vista2)
+		#vista2.features[self] = Feature(vista2,self)
