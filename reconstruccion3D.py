@@ -19,10 +19,12 @@ class Rescontruccion3D(object):
     FMask = None
     d = None
     ruta = None
+    matcher = None
     
     #vistasProcesadas
 
     def __init__(self, ruta, K, d):
+        self.matcher = cv2.BFMatcher(cv2.NORM_L1, True)
         self.K = K
         self.d = d
         self.ruta = ruta
@@ -41,16 +43,16 @@ class Rescontruccion3D(object):
     def construir_vista3D(self,indice_vista_uno,indice_vista_dos):
         """la inicializacion se realiza con las dos primera imagenes, apartir de ahi se 
         deberia ir incrementando la nube 3D a partir de las demas vistas"""
-        self.vistas[indice_vista_uno].buscar_feature(self.vistas[indice_vista_dos]) #la primera inicializacion
+        self.vistas[indice_vista_uno].buscar_feature(self.vistas[indice_vista_dos],self.matcher ) #la primera inicializacion
         self.obtener_matriz_fundamental(self.vistas[indice_vista_uno].features[self.vistas[indice_vista_dos]].match_puntos_uno,self.vistas[indice_vista_uno].features[self.vistas[indice_vista_dos]].match_puntos_dos)
         self.obtener_matriz_esencial()
         puntos_homogenios_uno,puntos_homogenios_dos = self.vistas[indice_vista_uno].features[self.vistas[indice_vista_dos]].homogeneizar_puntos(self.K,self.FMask)
         camara = self.obtener_camaras(puntos_homogenios_uno,puntos_homogenios_dos)
         self.camaras.append(camara)
         X1 = self.triangular(puntos_homogenios_uno,puntos_homogenios_dos,camara)
-        X2 = self.triangular_linealmente(puntos_homogenios_uno,puntos_homogenios_dos,camara)
-        X3D = np.concatenate((X1,X2)) 
-        return X3D
+       # X2 = self.triangular_linealmente(puntos_homogenios_uno,puntos_homogenios_dos,camara)
+        #X3D = np.concatenate((X1,X1)) 
+        return np.array(X1)
 
     def obtener_matriz_fundamental(self,puntos_clave_uno,puntos_clave_dos):
         self.F,self.FMask = cv2.findFundamentalMat(puntos_clave_uno,puntos_clave_dos,cv2.FM_RANSAC, 0.1, 0.99)
