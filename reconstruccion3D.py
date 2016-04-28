@@ -133,6 +133,7 @@ class Rescontruccion3D(object):
         fig = plot.figure()
         ax = fig.add_subplot(111, projection='3d')
         ax.scatter(Xs, Ys, Zs, c='r', marker='o')
+        #ax.set_aspect('equal')
         ax.set_xlabel('Y')
         ax.set_ylabel('Z')
         ax.set_zlabel('X')
@@ -144,4 +145,6 @@ class Rescontruccion3D(object):
         fil = cloud.make_statistical_outlier_filter()
         fil.set_mean_k (50)
         fil.set_std_dev_mul_thresh (1.0)
-        fil.filter().to_file(nombre)
+        cloud = fil.filter()
+        cloud.to_file(nombre)
+        return cloud
