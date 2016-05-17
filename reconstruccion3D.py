@@ -20,8 +20,8 @@ class Rescontruccion3D(object):
     d = None
     ruta = None
     matcher = None
-    
-    #vistasProcesadas
+    vistas_procesadas = []
+    matches_utilizados = []
 
     def __init__(self, ruta, K, d):
         self.matcher = cv2.BFMatcher(cv2.NORM_L1, True)
@@ -37,20 +37,24 @@ class Rescontruccion3D(object):
 
         self.camaras.append(np.hstack((np.eye(3), np.zeros((3, 1)))))
 
+
     def inicializacion(self):
         self.pts3D = self.construir_vista3D(0,1)
 
     def construir_vista3D(self,indice_vista_uno,indice_vista_dos):
         """la inicializacion se realiza con las dos primera imagenes, apartir de ahi se 
         deberia ir incrementando la nube 3D a partir de las demas vistas"""
+        self.vistas_procesadas.append(self.vistas[indice_vista_uno])
+        self.vistas_procesadas.append(self.vistas[indice_vista_dos])
         self.vistas[indice_vista_uno].buscar_feature(self.vistas[indice_vista_dos],self.matcher ) #la primera inicializacion
         self.obtener_matriz_fundamental(self.vistas[indice_vista_uno].features[self.vistas[indice_vista_dos]].match_puntos_uno,self.vistas[indice_vista_uno].features[self.vistas[indice_vista_dos]].match_puntos_dos)
         self.obtener_matriz_esencial()
-        puntos_homogenios_uno,puntos_homogenios_dos = self.vistas[indice_vista_uno].features[self.vistas[indice_vista_dos]].homogeneizar_puntos(self.K,self.FMask)
+        puntos_homogenios_uno,puntos_homogenios_dos,self.matches_utilizados = self.vistas[indice_vista_uno].features[self.vistas[indice_vista_dos]].homogeneizar_puntos(self.K,self.FMask)
         camara = self.obtener_camaras(puntos_homogenios_uno,puntos_homogenios_dos)
         self.camaras.append(camara)
         X1 = self.triangular(puntos_homogenios_uno,puntos_homogenios_dos,camara)
-       # X2 = self.triangular_linealmente(puntos_homogenios_uno,puntos_homogenios_dos,camara)
+
+        #X2 = self.triangular_linealself.pts3Dmente(puntos_homogenios_uno,puntos_homogenios_dos,camara)
         #X3D = np.concatenate((X1,X1)) 
         return np.array(X1)
 
@@ -148,3 +152,11 @@ class Rescontruccion3D(object):
         cloud = fil.filter()
         cloud.to_file(nombre)
         return cloud
+
+
+    def multiples_imagenes():
+        for vista_nueva in self.vistas:
+            if not vista_nueva in vistas_procesadas:
+                for vista_procesada in vistas_procesadas:
+                    vista_procesada.buscar_feature(vista_nueva,self.matcher)
+

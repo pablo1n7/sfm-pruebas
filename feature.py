@@ -18,7 +18,7 @@ class Feature(object):
 		
 		self.vista_uno = vista1
 		self.vista_dos = vista2		
-		surf = cv2.SURF()
+		surf = cv2.SIFT()
 		self.puntos_uno, self.descriptor_uno = surf.detectAndCompute(self.vista_uno.img,None)
 		self.puntos_dos, self.descriptor_dos = surf.detectAndCompute(self.vista_dos.img,None)
 		
@@ -37,14 +37,14 @@ class Feature(object):
 		#cambiar esto esta mejor en el notebook
 		puntos_homogenios_uno = []
 		puntos_homogenios_dos = []
-		#self.matches_utilizados = []
+		matches_utilizados = []
 		for i in range(len(FMask)):
 			if FMask[i]:
 				# normalize and homogenize the image coordinates
-				#self.matches_utilizados.append(self.matches[i])
+				matches_utilizados.append(self.matches[i])
 				puntos_homogenios_uno.append(np.linalg.inv(K).dot([self.match_puntos_uno[i][0],self.match_puntos_uno[i][1], 1.0]))
 				puntos_homogenios_dos.append( np.linalg.inv(K).dot([self.match_puntos_dos[i][0],self.match_puntos_dos[i][1], 1.0]))
 
 		puntos_homogenios_uno = np.array(puntos_homogenios_uno)
 		puntos_homogenios_dos = np.array(puntos_homogenios_dos)
-		return puntos_homogenios_uno,puntos_homogenios_dos
+		return puntos_homogenios_uno,puntos_homogenios_dos,matches_utilizados
