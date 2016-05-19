@@ -1,0 +1,110 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_9a2c1/fast"
+/usr/bin/make -f CMakeFiles/cmTC_9a2c1.dir/build.make CMakeFiles/cmTC_9a2c1.dir/build
+make[1]: se entra en el directorio '/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9a2c1.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -fPIC    -o CMakeFiles/cmTC_9a2c1.dir/CheckSymbolExists.c.o   -c "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm/CMakeFiles/CMakeTmp/CheckSymbolExists.c"
+Linking C executable cmTC_9a2c1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9a2c1.dir/link.txt --verbose=1
+/usr/bin/cc  -fPIC     CMakeFiles/cmTC_9a2c1.dir/CheckSymbolExists.c.o  -o cmTC_9a2c1 -rdynamic 
+CMakeFiles/cmTC_9a2c1.dir/CheckSymbolExists.c.o: En la función `main':
+CheckSymbolExists.c:(.text+0x1b): referencia a `pthread_create' sin definir
+collect2: error: ld devolvió el estado de salida 1
+CMakeFiles/cmTC_9a2c1.dir/build.make:97: fallo en las instrucciones para el objetivo 'cmTC_9a2c1'
+make[1]: *** [cmTC_9a2c1] Error 1
+make[1]: se sale del directorio '/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm/CMakeFiles/CMakeTmp'
+Makefile:126: fallo en las instrucciones para el objetivo 'cmTC_9a2c1/fast'
+make: *** [cmTC_9a2c1/fast] Error 2
+
+File /home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0b005/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0b005.dir/build.make CMakeFiles/cmTC_0b005.dir/build
+make[1]: se entra en el directorio '/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0b005.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_0b005.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_0b005
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0b005.dir/link.txt --verbose=1
+/usr/bin/cc  -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_0b005.dir/CheckFunctionExists.c.o  -o cmTC_0b005 -rdynamic -lpthreads 
+/usr/bin/ld: no se puede encontrar -lpthreads
+collect2: error: ld devolvió el estado de salida 1
+CMakeFiles/cmTC_0b005.dir/build.make:97: fallo en las instrucciones para el objetivo 'cmTC_0b005'
+make[1]: *** [cmTC_0b005] Error 1
+make[1]: se sale del directorio '/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm/CMakeFiles/CMakeTmp'
+Makefile:126: fallo en las instrucciones para el objetivo 'cmTC_0b005/fast'
+make: *** [cmTC_0b005/fast] Error 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0bece/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0bece.dir/build.make CMakeFiles/cmTC_0bece.dir/build
+make[1]: se entra en el directorio '/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0bece.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -fPIC    -o CMakeFiles/cmTC_0bece.dir/CheckSymbolExists.c.o   -c "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/CMakeFiles/CMakeTmp/CheckSymbolExists.c"
+Linking C executable cmTC_0bece
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0bece.dir/link.txt --verbose=1
+/usr/bin/cc  -fPIC     CMakeFiles/cmTC_0bece.dir/CheckSymbolExists.c.o  -o cmTC_0bece -rdynamic 
+CMakeFiles/cmTC_0bece.dir/CheckSymbolExists.c.o: En la función `main':
+CheckSymbolExists.c:(.text+0x1b): referencia a `pthread_create' sin definir
+collect2: error: ld devolvió el estado de salida 1
+CMakeFiles/cmTC_0bece.dir/build.make:97: fallo en las instrucciones para el objetivo 'cmTC_0bece'
+make[1]: *** [cmTC_0bece] Error 1
+make[1]: se sale del directorio '/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/CMakeFiles/CMakeTmp'
+Makefile:126: fallo en las instrucciones para el objetivo 'cmTC_0bece/fast'
+make: *** [cmTC_0bece/fast] Error 2
+
+File /home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_e4805/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e4805.dir/build.make CMakeFiles/cmTC_e4805.dir/build
+make[1]: se entra en el directorio '/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e4805.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_e4805.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_e4805
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e4805.dir/link.txt --verbose=1
+/usr/bin/cc  -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_e4805.dir/CheckFunctionExists.c.o  -o cmTC_e4805 -rdynamic -lpthreads 
+/usr/bin/ld: no se puede encontrar -lpthreads
+collect2: error: ld devolvió el estado de salida 1
+CMakeFiles/cmTC_e4805.dir/build.make:97: fallo en las instrucciones para el objetivo 'cmTC_e4805'
+make[1]: *** [cmTC_e4805] Error 1
+make[1]: se sale del directorio '/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/CMakeFiles/CMakeTmp'
+Makefile:126: fallo en las instrucciones para el objetivo 'cmTC_e4805/fast'
+make: *** [cmTC_e4805/fast] Error 2
+
+

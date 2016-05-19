@@ -1,0 +1,3 @@
+/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/CMakeFiles/edit_cache.dir
+/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/CMakeFiles/rebuild_cache.dir
+/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/CMakeFiles/Reconstruccion3D.dir
