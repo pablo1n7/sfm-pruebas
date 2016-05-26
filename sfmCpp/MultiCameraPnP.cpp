@@ -38,6 +38,11 @@ using namespace std;
 #endif
 #include <opencv2/calib3d/calib3d.hpp>
 
+#include <vector>
+
+using namespace cv;
+using namespace std;
+
 bool sort_by_first(pair<int,pair<int,int> > a, pair<int,pair<int,int> > b) { return a.first < b.first; }
 
 //Following Snavely07 4.2 - find how many inliers are in the Homography between 2 views
@@ -452,7 +457,15 @@ void MultiCameraPnP::AdjustCurrentBundle() {
 	cv::Mat _cam_matrix = K;
 	BundleAdjuster BA;
 	BA.adjustBundle(pcloud,_cam_matrix,imgpts,Pmats);
+	
 	K = cam_matrix;
+
+	//Matx33d K(689.87, 0, 380.1725, 0, 691.04,251.7025, 0, 0, 1);
+	//K = cv::Matx33d(689, 0, 380, 0, 691,251, 0, 0, 1);
+	//Matx33d K(0,-1,0,	//HZ 9.13
+	//	1,0,0,
+	//	0,0,1);
+
 	Kinv = K.inv();
 	
 	cout << "use new K " << endl << K << endl;

@@ -32,6 +32,8 @@
 #include "OFFeatureMatcher.h"
 #include "GPUSURFFeatureMatcher.h"
 
+using namespace std;
+
 void MultiCameraDistance::setImages(const std::vector<cv::Mat>& imgs_,
 		const std::vector<std::string>& imgs_names_,
 		const std::string& imgs_path_)
@@ -76,9 +78,15 @@ void MultiCameraDistance::setImages(const std::vector<cv::Mat>& imgs_,
 void MultiCameraDistance::init(const std::string& imgs_path_) {
 	//load calibration matrix
 	cv::FileStorage fs;
-	if (fs.open(imgs_path_ + "\\out_camera_data.yml", cv::FileStorage::READ)) {
+
+
+	if (fs.open(imgs_path_ + "/out_camera_data.yml", cv::FileStorage::READ)) {
+	//cout << imgs_path_+"/out_camera_data.yml";
 		fs["camera_matrix"] >> cam_matrix;
 		fs["distortion_coefficients"] >> distortion_coeff;
+		cout << "Parametros de la Camara Cargados";
+		cout << "------";
+
 	} else {
 		//no calibration matrix file - mockup calibration
 		cv::Size imgs_size = imgs[0].size();
@@ -87,8 +95,25 @@ void MultiCameraDistance::init(const std::string& imgs_path_) {
 				/ 2.0, 0, max_w_h, imgs_size.height / 2.0, 0, 0, 1);
 		distortion_coeff = cv::Mat_<double>::zeros(1, 4);
 	}
+	
+	// Matrix K del monumento
+	//cam_matrix = (cv::Mat_<double>(3, 3) << 2759.48/4, 0, 1520.69/4, 0, 2764.16/4,1006.81/4, 0, 0, 1);
+	
+
+	 // Matrix K de la webCam
+	//cam_matrix = (cv::Mat_<double>(3, 3) << 1.14813416e+03, 0., 3.33526245e+02, 0., 1.17682031e+03, 2.25875488e+02, 0., 0., 1.);
+	//distortion_coeff = (cv::Mat_<double>(1,4) << 1.57908952e+00, 1.74554634e+00, -1.43154219e-01, 2.69684792e-01,-1.52518911e+01);
+
+
+	//Matrix K del ipad
+	//cam_matrix = (cv::Mat_<double>(3, 3) << 1.36265690e+03,0.00000000e+00,1.64023565e+03,0.00000000e+00,1.53612235e+03,9.50141941e+02,0.00000000e+00,0.00000000e+00,1.00000000e+00);
+	//distortion_coeff = (cv::Mat_<double>(1,4) << 0.08011418,-0.61232976,-0.01398522,0.01305635,1.65526059);
+ 
+
 
 	K = cam_matrix;
+
+
 	invert(K, Kinv); //get inverse of camera matrix
 
 	distortion_coeff.convertTo(distcoeff_32f, CV_32FC1);

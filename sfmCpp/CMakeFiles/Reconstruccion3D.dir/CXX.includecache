@@ -6,19 +6,19 @@
 
 #IncludeRegexTransform: 
 
-/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/AbstractFeatureMatcher.cpp
+/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/AbstractFeatureMatcher.cpp
 AbstractFeatureMatcher.h
-/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/AbstractFeatureMatcher.h
+/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/AbstractFeatureMatcher.h
 
-/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/AbstractFeatureMatcher.h
+/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/AbstractFeatureMatcher.h
 IFeatureMatcher.h
-/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/IFeatureMatcher.h
+/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/IFeatureMatcher.h
 
-/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/BundleAdjuster.cpp
+/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/BundleAdjuster.cpp
 BundleAdjuster.h
-/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/BundleAdjuster.h
+/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/BundleAdjuster.h
 Common.h
-/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/Common.h
+/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/Common.h
 opencv2/contrib/contrib.hpp
 -
 ../3rdparty/SSBA-3.0/Math/v3d_linear.h
@@ -28,17 +28,17 @@ opencv2/contrib/contrib.hpp
 ../3rdparty/SSBA-3.0/Geometry/v3d_metricbundle.h
 /home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/3rdparty/SSBA-3.0/Geometry/v3d_metricbundle.h
 
-/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/BundleAdjuster.h
+/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/BundleAdjuster.h
 vector
 -
 opencv2/core/core.hpp
 -
 Common.h
-/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/Common.h
+/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/Common.h
 
-/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/Common.cpp
+/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/Common.cpp
 Common.h
-/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/Common.h
+/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/Common.h
 opencv2/highgui/highgui.hpp
 -
 opencv2/imgproc/imgproc.hpp
@@ -48,7 +48,7 @@ iostream
 dirent.h
 -
 
-/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/Common.h
+/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/Common.h
 opencv2/core/core.hpp
 -
 opencv2/features2d/features2d.hpp
@@ -62,49 +62,49 @@ list
 set
 -
 
-/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/Distance.cpp
+/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/Distance.cpp
 stdio.h
 -
 iostream
 -
 opencv2/core/core.hpp
-/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/opencv2/core/core.hpp
+/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/opencv2/core/core.hpp
 opencv2/features2d/features2d.hpp
-/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/opencv2/features2d/features2d.hpp
+/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/opencv2/features2d/features2d.hpp
 opencv2/highgui/highgui.hpp
-/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/opencv2/highgui/highgui.hpp
+/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/opencv2/highgui/highgui.hpp
 opencv2/imgproc/imgproc.hpp
-/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/opencv2/imgproc/imgproc.hpp
+/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/opencv2/imgproc/imgproc.hpp
 opencv2/calib3d/calib3d.hpp
-/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/opencv2/calib3d/calib3d.hpp
+/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/opencv2/calib3d/calib3d.hpp
 opencv2/video/tracking.hpp
-/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/opencv2/video/tracking.hpp
+/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/opencv2/video/tracking.hpp
 fstream
 -
 Distance.h
-/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/Distance.h
+/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/Distance.h
 
-/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/Distance.h
+/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/Distance.h
 opencv2/opencv.hpp
 -
 vector
 -
 Common.h
-/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/Common.h
+/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/Common.h
 IDistance.h
-/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/IDistance.h
+/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/IDistance.h
 Triangulation.h
-/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/Triangulation.h
+/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/Triangulation.h
 FindCameraMatrices.h
-/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/FindCameraMatrices.h
+/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/FindCameraMatrices.h
 RichFeatureMatcher.h
-/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/RichFeatureMatcher.h
+/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/RichFeatureMatcher.h
 
-/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/FindCameraMatrices.cpp
+/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/FindCameraMatrices.cpp
 FindCameraMatrices.h
-/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/FindCameraMatrices.h
+/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/FindCameraMatrices.h
 Triangulation.h
-/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/Triangulation.h
+/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/Triangulation.h
 vector
 -
 iostream
@@ -114,19 +114,19 @@ opencv2/calib3d/calib3d.hpp
 Eigen/Eigen
 -
 
-/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/FindCameraMatrices.h
+/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/FindCameraMatrices.h
 opencv2/core/core.hpp
 -
 opencv2/features2d/features2d.hpp
 -
 Common.h
-/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/Common.h
+/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/Common.h
 
-/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/GPUSURFFeatureMatcher.cpp
+/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/GPUSURFFeatureMatcher.cpp
 GPUSURFFeatureMatcher.h
-/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/GPUSURFFeatureMatcher.h
+/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/GPUSURFFeatureMatcher.h
 FindCameraMatrices.h
-/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/FindCameraMatrices.h
+/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/FindCameraMatrices.h
 opencv2/features2d/features2d.hpp
 -
 opencv2/highgui/highgui.hpp
@@ -144,9 +144,9 @@ iostream
 set
 -
 
-/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/GPUSURFFeatureMatcher.h
+/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/GPUSURFFeatureMatcher.h
 IFeatureMatcher.h
-/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/IFeatureMatcher.h
+/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/IFeatureMatcher.h
 opencv2/opencv_modules.hpp
 -
 opencv2/gpu/gpu.hpp
@@ -154,9 +154,9 @@ opencv2/gpu/gpu.hpp
 opencv2/nonfree/gpu.hpp
 -
 
-/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/IDistance.h
+/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/IDistance.h
 
-/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/IFeatureMatcher.h
+/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/IFeatureMatcher.h
 opencv2/core/core.hpp
 -
 opencv2/features2d/features2d.hpp
@@ -164,21 +164,21 @@ opencv2/features2d/features2d.hpp
 vector
 -
 IDistance.h
-/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/IDistance.h
+/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/IDistance.h
 Common.h
-/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/Common.h
+/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/Common.h
 
-/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/MultiCameraDistance.cpp
+/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/MultiCameraDistance.cpp
 MultiCameraDistance.h
-/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/MultiCameraDistance.h
+/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/MultiCameraDistance.h
 RichFeatureMatcher.h
-/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/RichFeatureMatcher.h
+/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/RichFeatureMatcher.h
 OFFeatureMatcher.h
-/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/OFFeatureMatcher.h
+/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/OFFeatureMatcher.h
 GPUSURFFeatureMatcher.h
-/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/GPUSURFFeatureMatcher.h
+/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/GPUSURFFeatureMatcher.h
 
-/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/MultiCameraDistance.h
+/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/MultiCameraDistance.h
 opencv2/opencv.hpp
 -
 vector
@@ -186,35 +186,37 @@ vector
 utility
 -
 IDistance.h
-/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/IDistance.h
+/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/IDistance.h
 Triangulation.h
-/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/Triangulation.h
+/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/Triangulation.h
 IFeatureMatcher.h
-/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/IFeatureMatcher.h
+/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/IFeatureMatcher.h
 FindCameraMatrices.h
-/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/FindCameraMatrices.h
+/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/FindCameraMatrices.h
 
-/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/MultiCameraPnP.cpp
+/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/MultiCameraPnP.cpp
 MultiCameraPnP.h
-/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/MultiCameraPnP.h
+/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/MultiCameraPnP.h
 BundleAdjuster.h
-/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/BundleAdjuster.h
+/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/BundleAdjuster.h
 opencv2/gpu/gpu.hpp
 -
 opencv2/calib3d/calib3d.hpp
 -
+vector
+-
 
-/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/MultiCameraPnP.h
+/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/MultiCameraPnP.h
 MultiCameraDistance.h
-/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/MultiCameraDistance.h
+/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/MultiCameraDistance.h
 Common.h
-/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/Common.h
+/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/Common.h
 SfMUpdateListener.h
-/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/SfMUpdateListener.h
+/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/SfMUpdateListener.h
 
-/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/OFFeatureMatcher.cpp
+/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/OFFeatureMatcher.cpp
 OFFeatureMatcher.h
-/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/OFFeatureMatcher.h
+/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/OFFeatureMatcher.h
 opencv2/video/video.hpp
 -
 opencv2/imgproc/imgproc.hpp
@@ -232,15 +234,15 @@ omp.h
 set
 -
 
-/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/OFFeatureMatcher.h
+/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/OFFeatureMatcher.h
 AbstractFeatureMatcher.h
-/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/AbstractFeatureMatcher.h
+/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/AbstractFeatureMatcher.h
 
-/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/RichFeatureMatcher.cpp
+/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/RichFeatureMatcher.cpp
 RichFeatureMatcher.h
-/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/RichFeatureMatcher.h
+/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/RichFeatureMatcher.h
 FindCameraMatrices.h
-/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/FindCameraMatrices.h
+/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/FindCameraMatrices.h
 opencv2/features2d/features2d.hpp
 -
 opencv2/highgui/highgui.hpp
@@ -258,25 +260,25 @@ iostream
 set
 -
 
-/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/RichFeatureMatcher.h
+/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/RichFeatureMatcher.h
 IFeatureMatcher.h
-/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/IFeatureMatcher.h
+/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/IFeatureMatcher.h
 
-/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/SfMUpdateListener.cpp
+/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/SfMUpdateListener.cpp
 SfMUpdateListener.h
-/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/SfMUpdateListener.h
+/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/SfMUpdateListener.h
 
-/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/SfMUpdateListener.h
+/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/SfMUpdateListener.h
 opencv2/core/core.hpp
 -
 
-/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/Triangulation.cpp
+/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/Triangulation.cpp
 Triangulation.h
-/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/Triangulation.h
+/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/Triangulation.h
 iostream
 -
 
-/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/Triangulation.h
+/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/Triangulation.h
 opencv2/core/core.hpp
 -
 opencv2/features2d/features2d.hpp
@@ -290,17 +292,17 @@ opencv2/imgproc/imgproc.hpp
 vector
 -
 Common.h
-/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/Common.h
+/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/Common.h
 
-/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/reconstruccion3D.cpp
+/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/reconstruccion3D.cpp
 iostream
 -
 string.h
 -
 Distance.h
-/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/Distance.h
+/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/Distance.h
 MultiCameraPnP.h
-/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/MultiCameraPnP.h
+/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/MultiCameraPnP.h
 pcl/io/pcd_io.h
 -
 pcl/point_types.h

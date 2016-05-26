@@ -136,8 +136,12 @@ int main(int argc, char const *argv[])
 
 	//pcl::io::savePCDFileASCII ("test_pcd.pcd", distance->getPointCloudRGB());
 	pcl::PointCloud<pcl::PointXYZRGB>::Ptr cloud;
+	pcl::PointCloud<pcl::PointXYZRGB>::Ptr cloud1;
+	cloud1.reset(new pcl::PointCloud<pcl::PointXYZRGB>);
 	cloud.reset(new pcl::PointCloud<pcl::PointXYZRGB>);
-	PopulatePCLPointCloud(cloud,distance->getPointCloud(),distance->getPointCloudRGB(),1);
+
+	//PopulatePCLPointCloud(cloud,distance->getPointCloud(),distance->getPointCloudRGB(),1);
+	PopulatePCLPointCloud(cloud1,distance->getPointCloudBeforeBA(),distance->getPointCloudRGBBeforeBA(),1);
 
 	return 0;
 }

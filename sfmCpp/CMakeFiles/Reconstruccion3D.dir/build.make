@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm"
+CMAKE_SOURCE_DIR = "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm"
+CMAKE_BINARY_DIR = "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Reconstruccion3D.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/Reconstruccion3D.dir/flags.make
 
 CMakeFiles/Reconstruccion3D.dir/reconstruccion3D.cpp.o: CMakeFiles/Reconstruccion3D.dir/flags.make
 CMakeFiles/Reconstruccion3D.dir/reconstruccion3D.cpp.o: reconstruccion3D.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Reconstruccion3D.dir/reconstruccion3D.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Reconstruccion3D.dir/reconstruccion3D.cpp.o -c "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/reconstruccion3D.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Reconstruccion3D.dir/reconstruccion3D.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Reconstruccion3D.dir/reconstruccion3D.cpp.o -c "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/reconstruccion3D.cpp"
 
 CMakeFiles/Reconstruccion3D.dir/reconstruccion3D.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Reconstruccion3D.dir/reconstruccion3D.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/reconstruccion3D.cpp" > CMakeFiles/Reconstruccion3D.dir/reconstruccion3D.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/reconstruccion3D.cpp" > CMakeFiles/Reconstruccion3D.dir/reconstruccion3D.cpp.i
 
 CMakeFiles/Reconstruccion3D.dir/reconstruccion3D.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Reconstruccion3D.dir/reconstruccion3D.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/reconstruccion3D.cpp" -o CMakeFiles/Reconstruccion3D.dir/reconstruccion3D.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/reconstruccion3D.cpp" -o CMakeFiles/Reconstruccion3D.dir/reconstruccion3D.cpp.s
 
 CMakeFiles/Reconstruccion3D.dir/reconstruccion3D.cpp.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/Reconstruccion3D.dir/reconstruccion3D.cpp.o.provides.build: CMakeFile
 
 CMakeFiles/Reconstruccion3D.dir/Distance.cpp.o: CMakeFiles/Reconstruccion3D.dir/flags.make
 CMakeFiles/Reconstruccion3D.dir/Distance.cpp.o: Distance.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Reconstruccion3D.dir/Distance.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Reconstruccion3D.dir/Distance.cpp.o -c "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/Distance.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Reconstruccion3D.dir/Distance.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Reconstruccion3D.dir/Distance.cpp.o -c "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/Distance.cpp"
 
 CMakeFiles/Reconstruccion3D.dir/Distance.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Reconstruccion3D.dir/Distance.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/Distance.cpp" > CMakeFiles/Reconstruccion3D.dir/Distance.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/Distance.cpp" > CMakeFiles/Reconstruccion3D.dir/Distance.cpp.i
 
 CMakeFiles/Reconstruccion3D.dir/Distance.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Reconstruccion3D.dir/Distance.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/Distance.cpp" -o CMakeFiles/Reconstruccion3D.dir/Distance.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/Distance.cpp" -o CMakeFiles/Reconstruccion3D.dir/Distance.cpp.s
 
 CMakeFiles/Reconstruccion3D.dir/Distance.cpp.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/Reconstruccion3D.dir/Distance.cpp.o.provides.build: CMakeFiles/Recons
 
 CMakeFiles/Reconstruccion3D.dir/Triangulation.cpp.o: CMakeFiles/Reconstruccion3D.dir/flags.make
 CMakeFiles/Reconstruccion3D.dir/Triangulation.cpp.o: Triangulation.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Reconstruccion3D.dir/Triangulation.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Reconstruccion3D.dir/Triangulation.cpp.o -c "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/Triangulation.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Reconstruccion3D.dir/Triangulation.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Reconstruccion3D.dir/Triangulation.cpp.o -c "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/Triangulation.cpp"
 
 CMakeFiles/Reconstruccion3D.dir/Triangulation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Reconstruccion3D.dir/Triangulation.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/Triangulation.cpp" > CMakeFiles/Reconstruccion3D.dir/Triangulation.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/Triangulation.cpp" > CMakeFiles/Reconstruccion3D.dir/Triangulation.cpp.i
 
 CMakeFiles/Reconstruccion3D.dir/Triangulation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Reconstruccion3D.dir/Triangulation.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/Triangulation.cpp" -o CMakeFiles/Reconstruccion3D.dir/Triangulation.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/Triangulation.cpp" -o CMakeFiles/Reconstruccion3D.dir/Triangulation.cpp.s
 
 CMakeFiles/Reconstruccion3D.dir/Triangulation.cpp.o.requires:
 
@@ -131,16 +131,16 @@ CMakeFiles/Reconstruccion3D.dir/Triangulation.cpp.o.provides.build: CMakeFiles/R
 
 CMakeFiles/Reconstruccion3D.dir/FindCameraMatrices.cpp.o: CMakeFiles/Reconstruccion3D.dir/flags.make
 CMakeFiles/Reconstruccion3D.dir/FindCameraMatrices.cpp.o: FindCameraMatrices.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Reconstruccion3D.dir/FindCameraMatrices.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Reconstruccion3D.dir/FindCameraMatrices.cpp.o -c "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/FindCameraMatrices.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Reconstruccion3D.dir/FindCameraMatrices.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Reconstruccion3D.dir/FindCameraMatrices.cpp.o -c "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/FindCameraMatrices.cpp"
 
 CMakeFiles/Reconstruccion3D.dir/FindCameraMatrices.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Reconstruccion3D.dir/FindCameraMatrices.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/FindCameraMatrices.cpp" > CMakeFiles/Reconstruccion3D.dir/FindCameraMatrices.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/FindCameraMatrices.cpp" > CMakeFiles/Reconstruccion3D.dir/FindCameraMatrices.cpp.i
 
 CMakeFiles/Reconstruccion3D.dir/FindCameraMatrices.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Reconstruccion3D.dir/FindCameraMatrices.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/FindCameraMatrices.cpp" -o CMakeFiles/Reconstruccion3D.dir/FindCameraMatrices.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/FindCameraMatrices.cpp" -o CMakeFiles/Reconstruccion3D.dir/FindCameraMatrices.cpp.s
 
 CMakeFiles/Reconstruccion3D.dir/FindCameraMatrices.cpp.o.requires:
 
@@ -155,16 +155,16 @@ CMakeFiles/Reconstruccion3D.dir/FindCameraMatrices.cpp.o.provides.build: CMakeFi
 
 CMakeFiles/Reconstruccion3D.dir/MultiCameraDistance.cpp.o: CMakeFiles/Reconstruccion3D.dir/flags.make
 CMakeFiles/Reconstruccion3D.dir/MultiCameraDistance.cpp.o: MultiCameraDistance.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Reconstruccion3D.dir/MultiCameraDistance.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Reconstruccion3D.dir/MultiCameraDistance.cpp.o -c "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/MultiCameraDistance.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Reconstruccion3D.dir/MultiCameraDistance.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Reconstruccion3D.dir/MultiCameraDistance.cpp.o -c "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/MultiCameraDistance.cpp"
 
 CMakeFiles/Reconstruccion3D.dir/MultiCameraDistance.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Reconstruccion3D.dir/MultiCameraDistance.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/MultiCameraDistance.cpp" > CMakeFiles/Reconstruccion3D.dir/MultiCameraDistance.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/MultiCameraDistance.cpp" > CMakeFiles/Reconstruccion3D.dir/MultiCameraDistance.cpp.i
 
 CMakeFiles/Reconstruccion3D.dir/MultiCameraDistance.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Reconstruccion3D.dir/MultiCameraDistance.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/MultiCameraDistance.cpp" -o CMakeFiles/Reconstruccion3D.dir/MultiCameraDistance.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/MultiCameraDistance.cpp" -o CMakeFiles/Reconstruccion3D.dir/MultiCameraDistance.cpp.s
 
 CMakeFiles/Reconstruccion3D.dir/MultiCameraDistance.cpp.o.requires:
 
@@ -179,16 +179,16 @@ CMakeFiles/Reconstruccion3D.dir/MultiCameraDistance.cpp.o.provides.build: CMakeF
 
 CMakeFiles/Reconstruccion3D.dir/MultiCameraPnP.cpp.o: CMakeFiles/Reconstruccion3D.dir/flags.make
 CMakeFiles/Reconstruccion3D.dir/MultiCameraPnP.cpp.o: MultiCameraPnP.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Reconstruccion3D.dir/MultiCameraPnP.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Reconstruccion3D.dir/MultiCameraPnP.cpp.o -c "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/MultiCameraPnP.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Reconstruccion3D.dir/MultiCameraPnP.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Reconstruccion3D.dir/MultiCameraPnP.cpp.o -c "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/MultiCameraPnP.cpp"
 
 CMakeFiles/Reconstruccion3D.dir/MultiCameraPnP.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Reconstruccion3D.dir/MultiCameraPnP.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/MultiCameraPnP.cpp" > CMakeFiles/Reconstruccion3D.dir/MultiCameraPnP.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/MultiCameraPnP.cpp" > CMakeFiles/Reconstruccion3D.dir/MultiCameraPnP.cpp.i
 
 CMakeFiles/Reconstruccion3D.dir/MultiCameraPnP.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Reconstruccion3D.dir/MultiCameraPnP.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/MultiCameraPnP.cpp" -o CMakeFiles/Reconstruccion3D.dir/MultiCameraPnP.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/MultiCameraPnP.cpp" -o CMakeFiles/Reconstruccion3D.dir/MultiCameraPnP.cpp.s
 
 CMakeFiles/Reconstruccion3D.dir/MultiCameraPnP.cpp.o.requires:
 
@@ -203,16 +203,16 @@ CMakeFiles/Reconstruccion3D.dir/MultiCameraPnP.cpp.o.provides.build: CMakeFiles/
 
 CMakeFiles/Reconstruccion3D.dir/Common.cpp.o: CMakeFiles/Reconstruccion3D.dir/flags.make
 CMakeFiles/Reconstruccion3D.dir/Common.cpp.o: Common.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Reconstruccion3D.dir/Common.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Reconstruccion3D.dir/Common.cpp.o -c "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/Common.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Reconstruccion3D.dir/Common.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Reconstruccion3D.dir/Common.cpp.o -c "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/Common.cpp"
 
 CMakeFiles/Reconstruccion3D.dir/Common.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Reconstruccion3D.dir/Common.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/Common.cpp" > CMakeFiles/Reconstruccion3D.dir/Common.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/Common.cpp" > CMakeFiles/Reconstruccion3D.dir/Common.cpp.i
 
 CMakeFiles/Reconstruccion3D.dir/Common.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Reconstruccion3D.dir/Common.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/Common.cpp" -o CMakeFiles/Reconstruccion3D.dir/Common.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/Common.cpp" -o CMakeFiles/Reconstruccion3D.dir/Common.cpp.s
 
 CMakeFiles/Reconstruccion3D.dir/Common.cpp.o.requires:
 
@@ -227,16 +227,16 @@ CMakeFiles/Reconstruccion3D.dir/Common.cpp.o.provides.build: CMakeFiles/Reconstr
 
 CMakeFiles/Reconstruccion3D.dir/RichFeatureMatcher.cpp.o: CMakeFiles/Reconstruccion3D.dir/flags.make
 CMakeFiles/Reconstruccion3D.dir/RichFeatureMatcher.cpp.o: RichFeatureMatcher.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Reconstruccion3D.dir/RichFeatureMatcher.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Reconstruccion3D.dir/RichFeatureMatcher.cpp.o -c "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/RichFeatureMatcher.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Reconstruccion3D.dir/RichFeatureMatcher.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Reconstruccion3D.dir/RichFeatureMatcher.cpp.o -c "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/RichFeatureMatcher.cpp"
 
 CMakeFiles/Reconstruccion3D.dir/RichFeatureMatcher.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Reconstruccion3D.dir/RichFeatureMatcher.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/RichFeatureMatcher.cpp" > CMakeFiles/Reconstruccion3D.dir/RichFeatureMatcher.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/RichFeatureMatcher.cpp" > CMakeFiles/Reconstruccion3D.dir/RichFeatureMatcher.cpp.i
 
 CMakeFiles/Reconstruccion3D.dir/RichFeatureMatcher.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Reconstruccion3D.dir/RichFeatureMatcher.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/RichFeatureMatcher.cpp" -o CMakeFiles/Reconstruccion3D.dir/RichFeatureMatcher.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/RichFeatureMatcher.cpp" -o CMakeFiles/Reconstruccion3D.dir/RichFeatureMatcher.cpp.s
 
 CMakeFiles/Reconstruccion3D.dir/RichFeatureMatcher.cpp.o.requires:
 
@@ -251,16 +251,16 @@ CMakeFiles/Reconstruccion3D.dir/RichFeatureMatcher.cpp.o.provides.build: CMakeFi
 
 CMakeFiles/Reconstruccion3D.dir/OFFeatureMatcher.cpp.o: CMakeFiles/Reconstruccion3D.dir/flags.make
 CMakeFiles/Reconstruccion3D.dir/OFFeatureMatcher.cpp.o: OFFeatureMatcher.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Reconstruccion3D.dir/OFFeatureMatcher.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Reconstruccion3D.dir/OFFeatureMatcher.cpp.o -c "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/OFFeatureMatcher.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Reconstruccion3D.dir/OFFeatureMatcher.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Reconstruccion3D.dir/OFFeatureMatcher.cpp.o -c "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/OFFeatureMatcher.cpp"
 
 CMakeFiles/Reconstruccion3D.dir/OFFeatureMatcher.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Reconstruccion3D.dir/OFFeatureMatcher.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/OFFeatureMatcher.cpp" > CMakeFiles/Reconstruccion3D.dir/OFFeatureMatcher.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/OFFeatureMatcher.cpp" > CMakeFiles/Reconstruccion3D.dir/OFFeatureMatcher.cpp.i
 
 CMakeFiles/Reconstruccion3D.dir/OFFeatureMatcher.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Reconstruccion3D.dir/OFFeatureMatcher.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/OFFeatureMatcher.cpp" -o CMakeFiles/Reconstruccion3D.dir/OFFeatureMatcher.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/OFFeatureMatcher.cpp" -o CMakeFiles/Reconstruccion3D.dir/OFFeatureMatcher.cpp.s
 
 CMakeFiles/Reconstruccion3D.dir/OFFeatureMatcher.cpp.o.requires:
 
@@ -275,16 +275,16 @@ CMakeFiles/Reconstruccion3D.dir/OFFeatureMatcher.cpp.o.provides.build: CMakeFile
 
 CMakeFiles/Reconstruccion3D.dir/BundleAdjuster.cpp.o: CMakeFiles/Reconstruccion3D.dir/flags.make
 CMakeFiles/Reconstruccion3D.dir/BundleAdjuster.cpp.o: BundleAdjuster.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Reconstruccion3D.dir/BundleAdjuster.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Reconstruccion3D.dir/BundleAdjuster.cpp.o -c "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/BundleAdjuster.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Reconstruccion3D.dir/BundleAdjuster.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Reconstruccion3D.dir/BundleAdjuster.cpp.o -c "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/BundleAdjuster.cpp"
 
 CMakeFiles/Reconstruccion3D.dir/BundleAdjuster.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Reconstruccion3D.dir/BundleAdjuster.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/BundleAdjuster.cpp" > CMakeFiles/Reconstruccion3D.dir/BundleAdjuster.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/BundleAdjuster.cpp" > CMakeFiles/Reconstruccion3D.dir/BundleAdjuster.cpp.i
 
 CMakeFiles/Reconstruccion3D.dir/BundleAdjuster.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Reconstruccion3D.dir/BundleAdjuster.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/BundleAdjuster.cpp" -o CMakeFiles/Reconstruccion3D.dir/BundleAdjuster.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/BundleAdjuster.cpp" -o CMakeFiles/Reconstruccion3D.dir/BundleAdjuster.cpp.s
 
 CMakeFiles/Reconstruccion3D.dir/BundleAdjuster.cpp.o.requires:
 
@@ -299,16 +299,16 @@ CMakeFiles/Reconstruccion3D.dir/BundleAdjuster.cpp.o.provides.build: CMakeFiles/
 
 CMakeFiles/Reconstruccion3D.dir/GPUSURFFeatureMatcher.cpp.o: CMakeFiles/Reconstruccion3D.dir/flags.make
 CMakeFiles/Reconstruccion3D.dir/GPUSURFFeatureMatcher.cpp.o: GPUSURFFeatureMatcher.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Reconstruccion3D.dir/GPUSURFFeatureMatcher.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Reconstruccion3D.dir/GPUSURFFeatureMatcher.cpp.o -c "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/GPUSURFFeatureMatcher.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Reconstruccion3D.dir/GPUSURFFeatureMatcher.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Reconstruccion3D.dir/GPUSURFFeatureMatcher.cpp.o -c "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/GPUSURFFeatureMatcher.cpp"
 
 CMakeFiles/Reconstruccion3D.dir/GPUSURFFeatureMatcher.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Reconstruccion3D.dir/GPUSURFFeatureMatcher.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/GPUSURFFeatureMatcher.cpp" > CMakeFiles/Reconstruccion3D.dir/GPUSURFFeatureMatcher.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/GPUSURFFeatureMatcher.cpp" > CMakeFiles/Reconstruccion3D.dir/GPUSURFFeatureMatcher.cpp.i
 
 CMakeFiles/Reconstruccion3D.dir/GPUSURFFeatureMatcher.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Reconstruccion3D.dir/GPUSURFFeatureMatcher.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/GPUSURFFeatureMatcher.cpp" -o CMakeFiles/Reconstruccion3D.dir/GPUSURFFeatureMatcher.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/GPUSURFFeatureMatcher.cpp" -o CMakeFiles/Reconstruccion3D.dir/GPUSURFFeatureMatcher.cpp.s
 
 CMakeFiles/Reconstruccion3D.dir/GPUSURFFeatureMatcher.cpp.o.requires:
 
@@ -323,16 +323,16 @@ CMakeFiles/Reconstruccion3D.dir/GPUSURFFeatureMatcher.cpp.o.provides.build: CMak
 
 CMakeFiles/Reconstruccion3D.dir/AbstractFeatureMatcher.cpp.o: CMakeFiles/Reconstruccion3D.dir/flags.make
 CMakeFiles/Reconstruccion3D.dir/AbstractFeatureMatcher.cpp.o: AbstractFeatureMatcher.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Reconstruccion3D.dir/AbstractFeatureMatcher.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Reconstruccion3D.dir/AbstractFeatureMatcher.cpp.o -c "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/AbstractFeatureMatcher.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Reconstruccion3D.dir/AbstractFeatureMatcher.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Reconstruccion3D.dir/AbstractFeatureMatcher.cpp.o -c "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/AbstractFeatureMatcher.cpp"
 
 CMakeFiles/Reconstruccion3D.dir/AbstractFeatureMatcher.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Reconstruccion3D.dir/AbstractFeatureMatcher.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/AbstractFeatureMatcher.cpp" > CMakeFiles/Reconstruccion3D.dir/AbstractFeatureMatcher.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/AbstractFeatureMatcher.cpp" > CMakeFiles/Reconstruccion3D.dir/AbstractFeatureMatcher.cpp.i
 
 CMakeFiles/Reconstruccion3D.dir/AbstractFeatureMatcher.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Reconstruccion3D.dir/AbstractFeatureMatcher.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/AbstractFeatureMatcher.cpp" -o CMakeFiles/Reconstruccion3D.dir/AbstractFeatureMatcher.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/AbstractFeatureMatcher.cpp" -o CMakeFiles/Reconstruccion3D.dir/AbstractFeatureMatcher.cpp.s
 
 CMakeFiles/Reconstruccion3D.dir/AbstractFeatureMatcher.cpp.o.requires:
 
@@ -347,16 +347,16 @@ CMakeFiles/Reconstruccion3D.dir/AbstractFeatureMatcher.cpp.o.provides.build: CMa
 
 CMakeFiles/Reconstruccion3D.dir/SfMUpdateListener.cpp.o: CMakeFiles/Reconstruccion3D.dir/flags.make
 CMakeFiles/Reconstruccion3D.dir/SfMUpdateListener.cpp.o: SfMUpdateListener.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Reconstruccion3D.dir/SfMUpdateListener.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Reconstruccion3D.dir/SfMUpdateListener.cpp.o -c "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/SfMUpdateListener.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Reconstruccion3D.dir/SfMUpdateListener.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Reconstruccion3D.dir/SfMUpdateListener.cpp.o -c "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/SfMUpdateListener.cpp"
 
 CMakeFiles/Reconstruccion3D.dir/SfMUpdateListener.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Reconstruccion3D.dir/SfMUpdateListener.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/SfMUpdateListener.cpp" > CMakeFiles/Reconstruccion3D.dir/SfMUpdateListener.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/SfMUpdateListener.cpp" > CMakeFiles/Reconstruccion3D.dir/SfMUpdateListener.cpp.i
 
 CMakeFiles/Reconstruccion3D.dir/SfMUpdateListener.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Reconstruccion3D.dir/SfMUpdateListener.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/SfMUpdateListener.cpp" -o CMakeFiles/Reconstruccion3D.dir/SfMUpdateListener.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/SfMUpdateListener.cpp" -o CMakeFiles/Reconstruccion3D.dir/SfMUpdateListener.cpp.s
 
 CMakeFiles/Reconstruccion3D.dir/SfMUpdateListener.cpp.o.requires:
 
@@ -646,7 +646,7 @@ Reconstruccion3D: /usr/lib/libQt5Widgets.so.5.6.0
 Reconstruccion3D: /usr/lib/libQt5Gui.so.5.6.0
 Reconstruccion3D: /usr/lib/libQt5Core.so.5.6.0
 Reconstruccion3D: CMakeFiles/Reconstruccion3D.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable Reconstruccion3D"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable Reconstruccion3D"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Reconstruccion3D.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -675,6 +675,6 @@ CMakeFiles/Reconstruccion3D.dir/clean:
 .PHONY : CMakeFiles/Reconstruccion3D.dir/clean
 
 CMakeFiles/Reconstruccion3D.dir/depend:
-	cd "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm" "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm" "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm" "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm" "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfm/CMakeFiles/Reconstruccion3D.dir/DependInfo.cmake" --color=$(COLOR)
+	cd "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp" "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp" "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp" "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp" "/home/pablo/Documentos/Doctorado/Procesamiento de Imagenes/sfm-pruebas/sfmCpp/CMakeFiles/Reconstruccion3D.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/Reconstruccion3D.dir/depend
 
