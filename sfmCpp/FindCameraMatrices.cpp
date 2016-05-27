@@ -185,7 +185,8 @@ Mat GetFundamentalMat(const vector<KeyPoint>& imgpts1,
 #endif
 		double minVal,maxVal;
 		cv::minMaxIdx(pts1,&minVal,&maxVal);
-		F = findFundamentalMat(pts1, pts2, FM_RANSAC, 0.006 * maxVal, 0.99, status); //threshold from [Snavely07 4.1]
+		//F = findFundamentalMat(pts1, pts2, FM_RANSAC, 0.006 * maxVal, 0.99, status); //threshold from [Snavely07 4.1]
+		F = findFundamentalMat(pts1, pts2, FM_RANSAC, 0.1, 0.99, status);
 	}
 	
 	vector<DMatch> new_matches;
