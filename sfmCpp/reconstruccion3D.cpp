@@ -1,9 +1,3 @@
-//using namespace std;
-//#include <opencv2/core/core.hpp>
-//#include <opencv2/imgcodecs.hpp>
-//#include "Common.h"
-//#include "MultiCameraPnP.h"
-//#include <iostream>
 
 #include <iostream>
 #include <string.h>
@@ -21,6 +15,27 @@ using namespace cv;
 
 std::vector<cv::Mat> images;
 std::vector<std::string> images_names;
+/*
+void SORFilter() {
+	
+	pcl::PointCloud<pcl::PointXYZRGB>::Ptr cloud_filtered (new pcl::PointCloud<pcl::PointXYZRGB>);
+	
+	std::cerr << "Cloud before SOR filtering: " << cloud->width * cloud->height << " data points" << std::endl;
+	
+
+	// Create the filtering object
+	pcl::StatisticalOutlierRemoval<pcl::PointXYZRGB> sor;
+	sor.setInputCloud (cloud);
+	sor.setMeanK (50);
+	sor.setStddevMulThresh (1.0);
+	sor.filter (*cloud_filtered);
+	
+	std::cerr << "Cloud after SOR filtering: " << cloud_filtered->width * cloud_filtered->height << " data points " << std::endl;
+	
+	copyPointCloud(*cloud_filtered,*cloud);
+	copyPointCloud(*cloud,*orig_cloud);
+}
+*/
 
 void PopulatePCLPointCloud(const pcl::PointCloud<pcl::PointXYZRGB>::Ptr& mycloud,
 						   const vector<cv::Point3d>& pointcloud, 
@@ -90,7 +105,7 @@ void PopulatePCLPointCloud(const pcl::PointCloud<pcl::PointXYZRGB>::Ptr& mycloud
 		//pw.write("pointcloud.ply",*mycloud);
 		pcl::PCDWriter pw;
 		pw.write("pointcloud.pcd",*mycloud);
-		//pw.write("pointcloud.pcd",*mycloud);
+		//pw.write(*name,*mycloud);
 	}
 	
 	cout << "Done. (" << t <<"s)"<< endl;
@@ -133,6 +148,7 @@ int main(int argc, char const *argv[])
 		//	scale_cameras_down = 1.0/scale_cameras_down;
 		//}
 	}
+
 
 	//pcl::io::savePCDFileASCII ("test_pcd.pcd", distance->getPointCloudRGB());
 	pcl::PointCloud<pcl::PointXYZRGB>::Ptr cloud;
